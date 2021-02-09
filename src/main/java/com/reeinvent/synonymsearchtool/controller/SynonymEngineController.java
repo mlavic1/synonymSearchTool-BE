@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Set;
 
 @RestController
-@CrossOrigin("https://synonym-dictionary.herokuapp.com")
+@CrossOrigin("https://synonym-dictionary-app.herokuapp.com")
 @RequestMapping("synonym")
 @RequiredArgsConstructor
 public class SynonymEngineController {

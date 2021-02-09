@@ -13,6 +13,7 @@ public class ControllerExceptionHandler {
   @ExceptionHandler
   @ResponseStatus(HttpStatus.BAD_REQUEST)
   public ResponseEntity<String> handleInvalidRequest(HttpMessageNotReadableException messageException) {
+    // Error handling
     return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(String.format("Some of input fields are not valid. %s", messageException.getMessage()));
   }
 }
